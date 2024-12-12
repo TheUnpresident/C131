@@ -1,0 +1,27 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region PQ450191.1 1 11006
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11082
+PQ450191.1	Genbank	region	1	11006	.	+	.	ID=PQ450191.1:1..11006;Dbxref=taxon:11082;collection-date=26-Jul-2024;country=Poland;gb-acronym=WNV;gbkey=Src;genome=genomic;isolate=POL3/Poland/2025;isolation-source=swab;mol_type=genomic RNA;nat-host=Corvus cornix (hooded crow);note=lineage 2
+PQ450191.1	Genbank	gene	88	10392	.	+	.	ID=gene-POLY;Name=POLY;gbkey=Gene;gene=POLY;gene_biotype=protein_coding
+PQ450191.1	Genbank	CDS	88	10392	.	+	0	ID=cds-XKB87528.1;Parent=gene-POLY;Dbxref=NCBI_GP:XKB87528.1;Name=XKB87528.1;gbkey=CDS;gene=POLY;product=polyprotein;protein_id=XKB87528.1
+PQ450191.1	Genbank	mature_protein_region_of_CDS	88	456	.	+	.	ID=id-XKB87528.1:1..123;Parent=cds-XKB87528.1;gbkey=Prot;product=anchored capsid protein ancC
+PQ450191.1	Genbank	mature_protein_region_of_CDS	88	402	.	+	.	ID=id-XKB87528.1:1..105;Parent=cds-XKB87528.1;gbkey=Prot;product=capsid protein C
+PQ450191.1	Genbank	mature_protein_region_of_CDS	457	957	.	+	.	ID=id-XKB87528.1:124..290;Parent=cds-XKB87528.1;gbkey=Prot;product=membrane glycoprotein precursor prM
+PQ450191.1	Genbank	mature_protein_region_of_CDS	457	732	.	+	.	ID=id-XKB87528.1:124..215;Parent=cds-XKB87528.1;gbkey=Prot;product=protein pr
+PQ450191.1	Genbank	mature_protein_region_of_CDS	733	957	.	+	.	ID=id-XKB87528.1:216..290;Parent=cds-XKB87528.1;gbkey=Prot;product=membrane glycoprotein M
+PQ450191.1	Genbank	mature_protein_region_of_CDS	958	2460	.	+	.	ID=id-XKB87528.1:291..791;Parent=cds-XKB87528.1;gbkey=Prot;product=envelope protein E
+PQ450191.1	Genbank	mature_protein_region_of_CDS	2461	3516	.	+	.	ID=id-XKB87528.1:792..1143;Parent=cds-XKB87528.1;gbkey=Prot;product=nonstructural protein NS1
+PQ450191.1	Genbank	mature_protein_region_of_CDS	3517	4209	.	+	.	ID=id-XKB87528.1:1144..1374;Parent=cds-XKB87528.1;gbkey=Prot;product=nonstructural protein NS2A
+PQ450191.1	Genbank	mature_protein_region_of_CDS	4210	4602	.	+	.	ID=id-XKB87528.1:1375..1505;Parent=cds-XKB87528.1;gbkey=Prot;product=nonstructural protein NS2B
+PQ450191.1	Genbank	mature_protein_region_of_CDS	4603	6459	.	+	.	ID=id-XKB87528.1:1506..2124;Parent=cds-XKB87528.1;gbkey=Prot;product=nonstructural protein NS3
+PQ450191.1	Genbank	mature_protein_region_of_CDS	6460	6837	.	+	.	ID=id-XKB87528.1:2125..2250;Parent=cds-XKB87528.1;gbkey=Prot;product=nonstructural protein NS4A
+PQ450191.1	Genbank	mature_protein_region_of_CDS	6838	6906	.	+	.	ID=id-XKB87528.1:2251..2273;Parent=cds-XKB87528.1;gbkey=Prot;product=protein 2K
+PQ450191.1	Genbank	mature_protein_region_of_CDS	6907	7674	.	+	.	ID=id-XKB87528.1:2274..2529;Parent=cds-XKB87528.1;gbkey=Prot;product=nonstructural protein NS4B
+PQ450191.1	Genbank	mature_protein_region_of_CDS	7675	10389	.	+	.	ID=id-XKB87528.1:2530..3434;Parent=cds-XKB87528.1;gbkey=Prot;product=RNA-dependent RNA polymerase NS5
+PQ450191.1	Genbank	CDS	88	3543	.	+	0	ID=cds-XKB87529.1;Parent=gene-POLY;Dbxref=NCBI_GP:XKB87529.1;Name=XKB87529.1;exception=ribosomal slippage;gbkey=CDS;gene=POLY;product=truncated polyprotein NS1 prime;protein_id=XKB87529.1
+PQ450191.1	Genbank	CDS	3543	3674	.	+	0	ID=cds-XKB87529.1;Parent=gene-POLY;Dbxref=NCBI_GP:XKB87529.1;Name=XKB87529.1;exception=ribosomal slippage;gbkey=CDS;gene=POLY;product=truncated polyprotein NS1 prime;protein_id=XKB87529.1
+PQ450191.1	Genbank	mature_protein_region_of_CDS	2461	3543	.	+	.	ID=id-XKB87529.1:792..1195;Parent=cds-XKB87529.1;gbkey=Prot;product=nonstructural protein NS1 prime
+PQ450191.1	Genbank	mature_protein_region_of_CDS	3543	3671	.	+	.	ID=id-XKB87529.1:792..1195;Parent=cds-XKB87529.1;gbkey=Prot;product=nonstructural protein NS1 prime
+

@@ -1,0 +1,31 @@
+/* there is a link to this in the index file, if the name of this file is changed that will stop working */
+
+body {
+    background-color: #fafafa;  /* Light background */
+    font-family: Arial, sans-serif;
+    color: #333;  /* Dark text */
+    border: 5px solid red;  /* Make the body have a red border to check if the CSS is loaded */
+  }
+  
+  .jbrowse-main {
+    background-color: #f5f5f5;  /* Lighter background for the main content */
+  }
+  
+  .jbrowse-header {
+    background-color: #4CAF50;  /* Green header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .jbrowse-track-selector {
+    background-color: #eeeeee;  /* Light gray for track selector */
+    border: 1px solid #ddd;
+  }
+  
+  .track-label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,144 @@
+{
+  "assemblies": [
+    {
+      "name": "Pol Genomes",
+      "displayName": "West Nile Virus Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "PolGenomeSequences",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "West_Nile_Data/Pol2/P2_sequence.fasta",
+            "locationType": "LocalPath"
+          }
+        }
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol2_genome",
+      "name": "Pol2 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol2/P2_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol2_annotations",
+      "name": "Pol2 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol2/P2_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol3_genome",
+      "name": "Pol3 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol3/P3_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol3_annotations",
+      "name": "Pol3 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol3/P3_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol6_genome",
+      "name": "Pol6 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol6/P6_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol6_annotations",
+      "name": "Pol6 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol6/P6_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol7_genome",
+      "name": "Pol7 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol7/P7_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol7_annotations",
+      "name": "Pol7 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol7/P7_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    }
+  ],
+  "defaultSession": {
+    "name": "New Session",
+    "view": {
+      "id": "linearGenomeView",
+      "type": "LinearGenomeView",
+      "tracks": [
+        "Pol2_genome",
+        "Pol2_annotations",
+        "Pol3_genome",
+        "Pol3_annotations",
+        "Pol6_genome",
+        "Pol6_annotations",
+        "Pol7_genome",
+        "Pol7_annotations"
+      ]
+    }
+  },
+  "internetAccounts": [],
+  "aggregateTextSearchAdapters": []
+}

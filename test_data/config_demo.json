@@ -1,0 +1,160 @@
+{
+  // Plugins to extend JBrowse functionality
+  "plugins": [
+    {
+      "name": "Biothings",
+      "url": "https://unpkg.com/jbrowse-plugin-biothings@^1/dist/jbrowse-plugin-biothings.umd.production.min.js"
+    },
+    {
+      "name": "UCSC",
+      "url": "https://unpkg.com/jbrowse-plugin-ucsc@^1/dist/jbrowse-plugin-ucsc.umd.production.min.js"
+    }
+  ],
+  // Assemblies define the reference genome(s) for the viewer 
+  "assemblies": [
+    {
+      "name": "Pol Genomes", // Internal name for the genome assembly
+      "displayName": "West Nile Virus Genomes", // Display name in the UI
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "PolGenomeSequences",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "West_Nile_Data/Pol2/P2_sequence.fasta",
+            "locationType": "LocalPath"
+          }
+        }
+      }
+    }
+  ],
+  // Tracks define the data layers displayed in the genome viewer
+  "tracks": [
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol2_genome",
+      "name": "Pol2 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol2/P2_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol2_annotations",
+      "name": "Pol2 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol2/P2_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol3_genome",
+      "name": "Pol3 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol3/P3_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol3_annotations",
+      "name": "Pol3 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol3/P3_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol6_genome",
+      "name": "Pol6 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol6/P6_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol6_annotations",
+      "name": "Pol6 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol6/P6_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "SequenceTrack",
+      "trackId": "Pol7_genome",
+      "name": "Pol7 Genome",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "uri": "West_Nile_Data/Pol7/P7_sequence.fasta",
+          "locationType": "LocalPath"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol7_annotations",
+      "name": "Pol7 Annotations",
+      "assemblyNames": ["Pol Genomes"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "West_Nile_Data/Pol7/P7_annotations.gff3",
+          "locationType": "LocalPath"
+        }
+      }
+    }
+  ],
+  // Default session defines what is loaded when the viewer starts
+  "defaultSession": {
+    "name": "West Nile Virus Session",
+    "view": {
+      "id": "linearGenomeView",
+      "type": "LinearGenomeView",
+      "tracks": [
+        "Pol2_genome",
+        "Pol2_annotations",
+        "Pol3_genome",
+        "Pol3_annotations",
+        "Pol6_genome",
+        "Pol6_annotations",
+        "Pol7_genome",
+        "Pol7_annotations"
+      ]
+    }
+  },
+  // Internet accounts configuration (currently unused)
+  "internetAccounts": [],
+  // Text search adapters for track search functionality (currently unused)
+  "aggregateTextSearchAdapters": []
+}
